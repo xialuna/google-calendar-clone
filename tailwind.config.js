@@ -10,6 +10,7 @@ export default {
 				grayPrimary: "#1f1f1f",
 				graySecondary: "#444746",
 			},
+			gridTemplateColumns: { "1/5": "1fr 5fr" },
 		},
 	},
 	plugins: [],
