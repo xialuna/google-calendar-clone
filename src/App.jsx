@@ -1,12 +1,21 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { getMonth } from "./util";
+import CalendarHeader from "./components/CalenderHeader";
+import Month from "./components/Month";
+import Sidebar from "./components/Sidebar";
 
 function App() {
-	console.table(getMonth());
+	const [currentMonth, setCurrentMonth] = useState(getMonth());
 	return (
 		<>
-			<h1>Hello</h1>
+			<div className="h-screen flex flex-col">
+				<CalendarHeader />
+				<div className="flex flex-1">
+					<Sidebar />
+					<Month month={currentMonth} />
+				</div>
+			</div>
 		</>
 	);
 }
