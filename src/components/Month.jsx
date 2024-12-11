@@ -9,7 +9,7 @@ export default function Month({ month }) {
 			{month.map((week, weekIndex) => (
 				<React.Fragment key={weekIndex}>
 					{week.map((day, dayIndex) => (
-						<Day day={day} key={dayIndex} />
+						<Day day={day} key={dayIndex} rowIndex={weekIndex} />
 					))}
 				</React.Fragment>
 			))}
