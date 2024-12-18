@@ -1,12 +1,29 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import GlobalContext from "./GlobalContext";
 import dayjs from "dayjs";
 const ContextWrapper = (props) => {
 	const [monthIndex, setMonthIndex] = useState(dayjs().month());
+	const [miniCalendarMonth, setMiniCalendarMonth] = useState(null);
+	const [dayClicked, setDayClicked] = useState(null);
+
+	useEffect(() => {
+		if (miniCalendarMonth !== null) {
+			setMonthIndex(miniCalendarMonth);
+		}
+	}, [miniCalendarMonth]);
 	return (
 		<div>
-			<GlobalContext.Provider value={{ monthIndex, setMonthIndex }}>
+			<GlobalContext.Provider
+				value={{
+					monthIndex,
+					setMonthIndex,
+					miniCalendarMonth,
+					setMiniCalendarMonth,
+					dayClicked,
+					setDayClicked,
+				}}
+			>
 				{props.children}
 			</GlobalContext.Provider>
 		</div>

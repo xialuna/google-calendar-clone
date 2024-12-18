@@ -13,7 +13,8 @@ const MiniCalendar = () => {
 	}, [currentMonthIndex]);
 
 	// Synchronizes the mini calendar's state with the main calendar's position
-	const { monthIndex } = useContext(GlobalContext);
+	const { monthIndex, setMiniCalendarMonth, dayClicked, setDayClicked } =
+		useContext(GlobalContext);
 
 	// Updates the current month index whenever monthIndex(dependency) changes in the context
 	useEffect(() => {
@@ -31,13 +32,21 @@ const MiniCalendar = () => {
 
 	//Highlight current day
 	const getCurrentDayClass = (day) => {
-		return day.format("DD-MM-YY") === dayjs().format("DD-MM-YY")
-			? "bg-primary text-white rounded-full"
-			: "";
+		const format = "DD-MM-YY";
+		const currentDay = dayjs().format("DD-MM-YY");
+		const formattedDay = day.format("DD-MM-YY");
+		const selectedDay = dayClicked && dayClicked.format(format);
+		if (currentDay === formattedDay) {
+			return "bg-primary text-white rounded-full w-7";
+		} else if (formattedDay == selectedDay) {
+			return "bg-primary-100 rounded-full";
+		} else {
+			return "";
+		}
 	};
 
 	return (
-		<div className="mt-9">
+		<div className="mt-2">
 			<header className="flex justify-between">
 				{/* HEADING */}
 				<p className="text-grayPrimary">
@@ -59,7 +68,7 @@ const MiniCalendar = () => {
 			<div className="grid grid-cols-7 grid-rows-6">
 				{/* DAYS HEADING - Day.jsx */}
 				{currentMonth[0].map((day, dayIndex) => (
-					<span key={dayIndex} className="text-sm py--1 text-center">
+					<span key={dayIndex} className="text-xs py-1 text-center">
 						{day.format("dd").charAt(0)}
 					</span>
 				))}
@@ -70,9 +79,13 @@ const MiniCalendar = () => {
 						{week.map((day, dayIndex) => (
 							<button
 								key={dayIndex}
+								onClick={() => {
+									setMiniCalendarMonth(currentMonthIndex);
+									setDayClicked(day);
+								}}
 								className={`py-1 w-full ${getCurrentDayClass(day)}`}
 							>
-								<span className="text-sm">{day.format("D")}</span>
+								<span className="text-xs">{day.format("D")}</span>
 							</button>
 						))}
 					</React.Fragment>

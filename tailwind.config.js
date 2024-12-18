@@ -7,6 +7,7 @@ export default {
 			},
 			colors: {
 				primary: "#0b57d0",
+				"primary-100": "#C2E7FE",
 				grayPrimary: "#1f1f1f",
 				graySecondary: "#444746",
 			},
