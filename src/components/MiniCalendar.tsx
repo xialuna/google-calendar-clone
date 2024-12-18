@@ -45,6 +45,26 @@ const MiniCalendar = () => {
 					<ChevronRight className="w-6 h-6" />
 				</button>
 			</header>
+
+			<div className="grid grid-cols-7 grid-rows-6">
+				{/* DAYS HEADING - Day.jsx */}
+				{currentMonth[0].map((day, dayIndex) => (
+					<span key={dayIndex} className="text-sm py--1 text-center">
+						{day.format("dd").charAt(0)}
+					</span>
+				))}
+
+				{/* DAYS - Month.jsx */}
+				{currentMonth.map((week, weekIndex) => (
+					<React.Fragment key={weekIndex}>
+						{week.map((day, dayIndex) => (
+							<button key={dayIndex} className={"py-1 w-full"}>
+								<span className="text-sm">{day.format("D")}</span>
+							</button>
+						))}
+					</React.Fragment>
+				))}
+			</div>
 		</div>
 	);
 };

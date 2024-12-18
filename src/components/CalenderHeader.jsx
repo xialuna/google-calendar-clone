@@ -7,8 +7,13 @@ import dayjs from "dayjs";
 export default function CalendarHeader() {
 	const { monthIndex, setMonthIndex } = useContext(GlobalContext);
 
+	//Reset to current month
 	function handleReset() {
-		setMonthIndex(dayjs().month()); //Reset to current month
+		setMonthIndex(
+			monthIndex === dayjs().month()
+				? monthIndex + Math.random()
+				: dayjs().month
+		);
 	}
 
 	function handlePrevMonth() {
