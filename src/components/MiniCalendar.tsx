@@ -83,7 +83,9 @@ const MiniCalendar = () => {
 									setMiniCalendarMonth(currentMonthIndex);
 									setDayClicked(day);
 								}}
-								className={`py-1 w-full ${getCurrentDayClass(day)}`}
+								className={`py-1 w-full ${getCurrentDayClass(
+									day
+								)} hover:bg-[#E4E8EE] hover:rounded-full`}
 							>
 								<span className="text-xs">{day.format("D")}</span>
 							</button>
