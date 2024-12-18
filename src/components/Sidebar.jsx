@@ -1,9 +1,5 @@
 import React from "react";
 
 export default function Sidebar() {
-	return (
-		<div>
-			<p>Sidebar</p>
-		</div>
-	);
+	return <aside className="border p=5 w-64"></aside>;
 }
