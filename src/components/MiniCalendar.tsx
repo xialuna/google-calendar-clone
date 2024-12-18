@@ -41,7 +41,7 @@ const MiniCalendar = () => {
 					<ChevronLeft className="w-6 h-6" />
 				</button>
 
-				<button onClick={handlePrevMonth}>
+				<button onClick={handleNextMonth}>
 					<ChevronRight className="w-6 h-6" />
 				</button>
 			</header>
