@@ -20,6 +20,7 @@ const MiniCalendar = () => {
 		setCurrentMonthIndex(monthIndex);
 	}, [monthIndex]);
 
+	//Buttons event handler
 	function handlePrevMonth() {
 		setCurrentMonthIndex(currentMonthIndex - 1);
 	}
@@ -27,6 +28,13 @@ const MiniCalendar = () => {
 	function handleNextMonth() {
 		setCurrentMonthIndex(currentMonthIndex + 1);
 	}
+
+	//Highlight current day
+	const getCurrentDayClass = (day) => {
+		return day.format("DD-MM-YY") === dayjs().format("DD-MM-YY")
+			? "bg-primary text-white rounded-full"
+			: "";
+	};
 
 	return (
 		<div className="mt-9">
@@ -58,7 +66,10 @@ const MiniCalendar = () => {
 				{currentMonth.map((week, weekIndex) => (
 					<React.Fragment key={weekIndex}>
 						{week.map((day, dayIndex) => (
-							<button key={dayIndex} className={"py-1 w-full"}>
+							<button
+								key={dayIndex}
+								className={`py-1 w-full ${getCurrentDayClass(day)}`}
+							>
 								<span className="text-sm">{day.format("D")}</span>
 							</button>
 						))}
