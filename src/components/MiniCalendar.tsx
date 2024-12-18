@@ -45,13 +45,15 @@ const MiniCalendar = () => {
 						"MMMM YYYY"
 					)}
 				</p>
-				<button onClick={handlePrevMonth}>
-					<ChevronLeft className="w-6 h-6" />
-				</button>
+				<div>
+					<button onClick={handlePrevMonth}>
+						<ChevronLeft className="w-6 h-6" />
+					</button>
 
-				<button onClick={handleNextMonth}>
-					<ChevronRight className="w-6 h-6" />
-				</button>
+					<button onClick={handleNextMonth}>
+						<ChevronRight className="w-6 h-6" />
+					</button>
+				</div>
 			</header>
 
 			<div className="grid grid-cols-7 grid-rows-6">
