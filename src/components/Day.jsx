@@ -9,7 +9,7 @@ export default function Day({ day, rowIndex }) {
 			: "";
 	};
 	return (
-		<div className="flex flex-col border border-gray-200">
+		<div className="flex flex-col border border-gray-200 bg-white">
 			<header className="flex flex-col gap-0.5 items-center text-sm text-center">
 				{rowIndex === 0 && (
 					<p className="text-graySecondary mt-1">

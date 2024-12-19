@@ -14,7 +14,7 @@ function App() {
 	}, [monthIndex]);
 	return (
 		<>
-			<div className="h-screen flex flex-col font-productsans">
+			<div className="h-screen flex flex-col font-productsans bg-[#F8FAFD]">
 				<CalendarHeader />
 				<div className="flex flex-1">
 					<Sidebar />

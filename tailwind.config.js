@@ -8,6 +8,7 @@ export default {
 			colors: {
 				primary: "#0b57d0",
 				"primary-100": "#C2E7FE",
+				"gray-200": "#DDE3EA",
 				grayPrimary: "#1f1f1f",
 				graySecondary: "#444746",
 			},
