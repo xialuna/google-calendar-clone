@@ -31,7 +31,7 @@ const HolidayPopOver = () => {
 			</header>
 			<div>
 				<div className="h-40 overflow-hidden flex items-center justify-center ">
-					<img src="/Christmas.jpg" alt={holidays.name} />
+					<img src={holiday.image} alt={holiday.name} />
 				</div>
 				<div className="px-7 p-6">
 					<div className="flex gap-4 mb-5">
