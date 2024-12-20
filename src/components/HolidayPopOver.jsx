@@ -35,7 +35,7 @@ const HolidayPopOver = () => {
 				</div>
 				<div className="px-7 p-6">
 					<div className="flex gap-4 mb-5">
-						<span className="w-4 h-4 bg-green-500 rounded mt-2"></span>
+						<span className="w-4 h-[15px] bg-green rounded mt-2"></span>
 						<div>
 							<p className="text-[22px] font-light">{holiday.name}</p>
 							<p className="text-graySecondary text-sm">

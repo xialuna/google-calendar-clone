@@ -11,6 +11,7 @@ export default {
 				"gray-200": "#DDE3EA",
 				grayPrimary: "#1f1f1f",
 				graySecondary: "#444746",
+				green: "#0A8043",
 			},
 			gridTemplateColumns: { "1/5": "1fr 5fr" },
 		},
