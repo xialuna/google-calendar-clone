@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import logo from "../assets/logo.svg";
+import logo from "/logo.svg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import GlobalContext from "../context/GlobalContext";
 import dayjs from "dayjs";
