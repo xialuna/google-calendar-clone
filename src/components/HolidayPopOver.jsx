@@ -7,12 +7,14 @@ const HolidayPopOver = () => {
 	const { dayClicked, setShowHolidayPopOver } = useContext(GlobalContext);
 
 	// Find holiday based on the clicked day
-	// const holiday = holidays.find((holiday) => {
-	// 	holiday.month == dayClicked.month() + 1 &&
-	// 		holiday.day === dayClicked.date();
-	// });
+	const holiday = holidays.find(
+		(h) =>
+			h.day === dayClicked.date() &&
+			h.month === dayClicked.month() + 1 &&
+			h.year === dayClicked.year()
+	);
 
-	// if (!holiday) return null;
+	if (!holiday) return null;
 
 	return (
 		<div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center item-center bg-white rounded-3xl shadow-2xl w-[28rem] overflow-hidden">
@@ -38,17 +40,19 @@ const HolidayPopOver = () => {
 					<div className="flex gap-4 mb-5">
 						<span className="w-4 h-4 bg-green-500 rounded mt-2"></span>
 						<div>
-							<p className="text-[22px] font-light">Christmas Eve</p>
-							<p className="text-graySecondary text-sm">Tuesday, December 24</p>
+							<p className="text-[22px] font-light">{holiday.name}</p>
+							<p className="text-graySecondary text-sm">
+								{dayClicked.format("dddd, MMMM D")}
+							</p>
 						</div>
 					</div>
 					<div className="flex gap-4 items-center  text-graySecondary text-sm mb-2">
 						<Text className="w-4" />
-						<p>Description</p>
+						<p>{holiday.description}</p>
 					</div>
 					<div className="flex gap-4 items-center  text-graySecondary text-sm">
 						<Calendar className="w-4" />
-						<p>Holiday Type</p>
+						<p>{holiday.holiday_type}</p>
 					</div>
 				</div>
 			</div>
