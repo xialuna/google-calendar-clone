@@ -9,6 +9,8 @@ const GlobalContext = React.createContext({
 	setDayClicked: (day) => {},
 	showHolidayPopOver: false,
 	setShowHolidayPopOver: () => {},
+	showHolidays: true,
+	setShowHolidays: (p0: (prev: any) => boolean) => {},
 });
 
 export default GlobalContext;

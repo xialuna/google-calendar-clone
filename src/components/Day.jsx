@@ -5,12 +5,13 @@ import GlobalContext from "../context/GlobalContext";
 import { holidays } from "../../data";
 
 export default function Day({ day, rowIndex }) {
-	const { setDayClicked, setShowHolidayPopOver } = useContext(GlobalContext);
+	const { setDayClicked, setShowHolidayPopOver, showHolidays } =
+		useContext(GlobalContext);
 
-	// Check if the day has a holiday
-	const holiday = holidays.find(
-		(h) => h.day === day.date() && h.month === day.month() + 1
-	);
+	// Check if the day has a holiday and holiday toggle is on
+	const holiday = showHolidays
+		? holidays.find((h) => h.day === day.date() && h.month === day.month() + 1)
+		: null;
 
 	const getCurrentDayClass = () => {
 		return day.format("DD-MM-YY") === dayjs().format("DD-MM-YY")

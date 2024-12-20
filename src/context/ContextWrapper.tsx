@@ -7,7 +7,7 @@ const ContextWrapper = (props) => {
 	const [miniCalendarMonth, setMiniCalendarMonth] = useState(null);
 	const [dayClicked, setDayClicked] = useState(null);
 	const [showHolidayPopOver, setShowHolidayPopOver] = useState(false); //initial value
-
+	const [showHolidays, setShowHolidays] = useState(true);
 	useEffect(() => {
 		if (miniCalendarMonth !== null) {
 			setMonthIndex(miniCalendarMonth);
@@ -25,6 +25,8 @@ const ContextWrapper = (props) => {
 					setDayClicked,
 					showHolidayPopOver,
 					setShowHolidayPopOver,
+					showHolidays,
+					setShowHolidays,
 				}}
 			>
 				{props.children}
