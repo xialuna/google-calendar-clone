@@ -7,7 +7,7 @@ const CreateEventBtn = () => {
 	return (
 		<button
 			// onClick={() => setEventPopOver(true)}
-			className="flex flex-column gap-2 py-2 px-4 items-center bg-white shadow shadow-gray-400 rounded-full  hover:bg-gray-200 mb-6"
+			className="flex flex-column gap-2 py-2 px-4 items-center bg-white shadow shadow-gray-400 rounded-lg  hover:bg-gray-200 mb-6"
 		>
 			<Plus className="w-5" />
 			<p className="x"> Create</p>
