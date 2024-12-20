@@ -41,7 +41,7 @@ export default function Day({ day, rowIndex }) {
 				<p className={`p-1 my-1 ${getCurrentDayClass()}`}>{day.format("DD")}</p>
 			</header>
 			{holiday && (
-				<p className="text-xs text-white bg-green rounded-lg px-2 py-1 text-center truncate">
+				<p className="text-xs text-white bg-green rounded-lg px-2 py-1 truncate">
 					{holiday.name}
 				</p>
 			)}
