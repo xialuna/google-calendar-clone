@@ -25,6 +25,8 @@ export default function Day({ day, rowIndex }) {
 		}
 	};
 
+	const isStartOfMonth = day.date() === 1;
+
 	return (
 		<div
 			className={`flex flex-col border border-gray-200 bg-white p-2 ${
@@ -38,7 +40,9 @@ export default function Day({ day, rowIndex }) {
 						{day.format("ddd").toUpperCase()}
 					</p>
 				)}
-				<p className={`p-1 my-1 ${getCurrentDayClass()}`}>{day.format("DD")}</p>
+				<p className={`p-1 my-1 ${getCurrentDayClass()}`}>
+					{isStartOfMonth ? `${day.format("MMM")} ${day.date()}` : day.date()}
+				</p>
 			</header>
 			{holiday && (
 				<p className="text-xs text-white bg-green rounded-lg px-2 py-1 truncate">

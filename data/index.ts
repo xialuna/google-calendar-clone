@@ -79,7 +79,7 @@ export const holidays = [
 		month: 12,
 		day: 25,
 		image: "Christmas.jpg",
-		description: "Celebrates Jesus Christ's birth, a major Christian holiday.",
+		description: "Celebrates Jesus Christ's birth, a Christian holiday.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
