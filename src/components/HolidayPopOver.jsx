@@ -8,10 +8,7 @@ const HolidayPopOver = () => {
 
 	// Find holiday based on the clicked day
 	const holiday = holidays.find(
-		(h) =>
-			h.day === dayClicked.date() &&
-			h.month === dayClicked.month() + 1 &&
-			h.year === dayClicked.year()
+		(h) => h.day === dayClicked.date() && h.month === dayClicked.month() + 1
 	);
 
 	if (!holiday) return null;
