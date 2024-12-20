@@ -5,8 +5,7 @@ export const holidays = [
 		month: 1,
 		day: 1,
 		image: "NewYear.jpg",
-		description:
-			"New Year’s Day marks the first day of the calendar year, celebrated with festivities and fireworks.",
+		description: "Marks the first day of the year with celebrations.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
@@ -15,8 +14,7 @@ export const holidays = [
 		month: 4,
 		day: 9,
 		image: "ArawNgKagitingan.webp",
-		description:
-			"Araw ng Kagitingan, or Day of Valor, commemorates the bravery of Filipino soldiers during World War II.",
+		description: "Commemorates Filipino soldiers' bravery during World War II.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
@@ -25,8 +23,7 @@ export const holidays = [
 		month: 4,
 		day: 17,
 		image: "MaundyThursday.jpeg",
-		description:
-			"Maundy Thursday is part of the Holy Week, commemorating the Last Supper of Jesus Christ.",
+		description: "Part of Holy Week, remembering Jesus Christ's Last Supper.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
@@ -35,8 +32,7 @@ export const holidays = [
 		month: 4,
 		day: 18,
 		image: "GoodFriday.png",
-		description:
-			"Good Friday is observed to remember the crucifixion and death of Jesus Christ.",
+		description: "Observed to reflect on Jesus Christ’s crucifixion and death.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
@@ -46,7 +42,7 @@ export const holidays = [
 		day: 1,
 		image: "LaborDay.jpg",
 		description:
-			"Labor Day celebrates workers and their contributions to society.",
+			"Celebrates workers' contributions to society and labor movements.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
@@ -55,8 +51,7 @@ export const holidays = [
 		month: 6,
 		day: 12,
 		image: "IndependenceDay.jpg",
-		description:
-			"Independence Day commemorates the Philippine Declaration of Independence from Spanish rule.",
+		description: "Marks the Philippine Declaration of Independence from Spain.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
@@ -65,8 +60,7 @@ export const holidays = [
 		month: 8,
 		day: 25,
 		image: "NationalHeroesDay.jpg",
-		description:
-			"National Heroes Day honors Filipino heroes who fought for the nation’s freedom.",
+		description: "Honors heroes who fought for the nation’s independence.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
@@ -76,7 +70,7 @@ export const holidays = [
 		day: 30,
 		image: "BonifacioDay.jpg",
 		description:
-			"Bonifacio Day commemorates the birth of Andres Bonifacio, a leader of the Philippine Revolution.",
+			"Commemorates Andres Bonifacio, leader of the Philippine Revolution.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
@@ -85,8 +79,7 @@ export const holidays = [
 		month: 12,
 		day: 25,
 		image: "Christmas.jpg",
-		description:
-			"Christmas Day celebrates the birth of Jesus Christ, a major Christian holiday.",
+		description: "Celebrates Jesus Christ's birth, a major Christian holiday.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
@@ -96,7 +89,7 @@ export const holidays = [
 		day: 30,
 		image: "RizalDay.jpg",
 		description:
-			"Rizal Day commemorates the life and works of Dr. Jose Rizal, a national hero.",
+			"Remembers Dr. Jose Rizal’s life and contributions to freedom.",
 		holiday_type: "National Regular Holiday",
 	},
 	{
@@ -105,8 +98,7 @@ export const holidays = [
 		month: 8,
 		day: 21,
 		image: "NinoyAquino.webp",
-		description:
-			"Ninoy Aquino Day honors the memory of Senator Benigno 'Ninoy' Aquino Jr., who fought for democracy.",
+		description: "Honors Senator Ninoy Aquino for his fight for democracy.",
 		holiday_type: "Special Non-Working Holiday",
 	},
 	{
@@ -115,8 +107,7 @@ export const holidays = [
 		month: 11,
 		day: 1,
 		image: "AllSaints.jpg",
-		description:
-			"All Saints’ Day honors all saints and is observed by visiting cemeteries and offering prayers.",
+		description: "Honors saints with prayers and visits to cemeteries.",
 		holiday_type: "Special Non-Working Holiday",
 	},
 	{
@@ -125,8 +116,7 @@ export const holidays = [
 		month: 12,
 		day: 8,
 		image: "MamaMary.jpg",
-		description:
-			"This day celebrates the belief in the Immaculate Conception of the Virgin Mary.",
+		description: "Celebrates the belief in Mary’s Immaculate Conception.",
 		holiday_type: "Special Non-Working Holiday",
 	},
 	{
@@ -135,8 +125,7 @@ export const holidays = [
 		month: 12,
 		day: 31,
 		image: "LastDay.webp",
-		description:
-			"The last day of the year is celebrated with fireworks and preparations for New Year’s Day.",
+		description: "Celebrated with fireworks and New Year’s Day preparations.",
 		holiday_type: "Special Non-Working Holiday",
 	},
 	{
@@ -145,8 +134,7 @@ export const holidays = [
 		month: 1,
 		day: 29,
 		image: "ChineseNewYear.jpg",
-		description:
-			"Chinese New Year is a vibrant celebration marking the beginning of the Lunar calendar.",
+		description: "Marks the Lunar calendar’s start with vibrant festivities.",
 		holiday_type: "Special Non-Working Holiday",
 	},
 	{
@@ -155,8 +143,7 @@ export const holidays = [
 		month: 4,
 		day: 19,
 		image: "BlackSaturday.jpg",
-		description:
-			"Black Saturday commemorates the day Jesus lay in the tomb, a time for solemn reflection.",
+		description: "Reflects on the day Jesus lay in the tomb.",
 		holiday_type: "Special Non-Working Holiday",
 	},
 	{
@@ -165,8 +152,7 @@ export const holidays = [
 		month: 10,
 		day: 31,
 		image: "AllSaints.jpg",
-		description:
-			"All Saints’ Day Eve is observed by families preparing for cemetery visits and prayer services.",
+		description: "Families prepare for cemetery visits and prayer services.",
 		holiday_type: "Special Non-Working Holiday",
 	},
 	{
@@ -175,8 +161,7 @@ export const holidays = [
 		month: 12,
 		day: 24,
 		image: "Christmas.jpg",
-		description:
-			"Christmas Eve is celebrated with family gatherings, Noche Buena feasts, and midnight Mass.",
+		description: "Marked by gatherings, Noche Buena feasts, and midnight Mass.",
 		holiday_type: "Special Non-Working Holiday",
 	},
 	{
@@ -186,7 +171,7 @@ export const holidays = [
 		day: 25,
 		image: "EDSA.jpg",
 		description:
-			"This day commemorates the peaceful revolution that restored democracy in the Philippines in 1986.",
+			"Commemorates the peaceful revolution restoring democracy in 1986.",
 		holiday_type: "Special Non-Working Holiday",
 	},
 ];
