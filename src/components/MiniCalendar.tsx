@@ -47,20 +47,20 @@ const MiniCalendar = () => {
 
 	return (
 		<div className="mt-2">
-			<header className="flex justify-between">
+			<header className="flex justify-between mb-1">
 				{/* HEADING */}
-				<p className="text-grayPrimary">
+				<p className="text-grayPrimary text-sm px-3">
 					{dayjs(new Date(dayjs().year(), currentMonthIndex)).format(
 						"MMMM YYYY"
 					)}
 				</p>
 				<div>
 					<button onClick={handlePrevMonth}>
-						<ChevronLeft className="w-6 h-6" />
+						<ChevronLeft className="w-5 h-5" />
 					</button>
 
 					<button onClick={handleNextMonth}>
-						<ChevronRight className="w-6 h-6" />
+						<ChevronRight className="w-5 h-5" />
 					</button>
 				</div>
 			</header>
