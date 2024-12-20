@@ -7,6 +7,8 @@ const GlobalContext = React.createContext({
 	setMiniCalendarMonth: (index) => {},
 	dayClicked: null,
 	setDayClicked: (day) => {},
+	showHolidayPopOver: false,
+	setShowHolidayPopOver: () => {},
 });
 
 export default GlobalContext;
